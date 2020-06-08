@@ -139,18 +139,15 @@ df = apply_labels(df,
                                 "Hochschulabschluß" = 9))
 df$ausbildung <- as.factor(df$ausbildung)
 
-
 df = apply_labels(df, 
-                  ausbildung = c("Schule beendet ohne Abschluss" = 1,
+                  schulabschluß = c("Schule beendet ohne Abschluß" = 1,
                                  "Volks-/ Hauptschulabschluß bzw. POS 8.oder 9. Klasse" = 2,
                                  "Mittlere Reife, Realschulabschluß bzw. POS 10. Klasse" = 3,
                                  "Fachhochschulreife" = 4,
                                  "Abitur" = 5,
                                  "Berufsfachschulabschluß" = 6,
                                  "Bin Schüler, habe noch keinen Schulabschluß" = 7))
-df$schulabschluss <- as.factor(df$schulabschluss)
-
-df$sonntagsfrage
+df$schulabschluß <- as.factor(df$schulabschluß)
 
 df = apply_labels(df, 
                   sonntagsfrage = c("SPD" = 1,
